@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7d5d311859.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <a href="#home"><div class="logo">Website</div></a>
+
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#photos">Photos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-btn">
+            <h1>Click on this button</h1>
+            <button><i class="fas fa-plus"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg2" id="photos">
+            <h2 class="center">Here are some cat photos</h2>
+            <div class="photos">
+                <div class="card" style="--x:10; --z:-20">
+                    <input type="checkbox" class="cardFlip" id="1"/>
+                    <label class="btn" for="1">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="img/cats/butterfly.jfif" alt="Cat with butterfly">
+                                <div class="card-description">
+                                Cat with butterfly
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iusto obcaecati rem nisi tenetur eveniet consectetur reprehenderit minima dicta? Odio, voluptatibus! Animi maiores impedit sunt illo inventore minima autem facilis?
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="card" style="--x:20; --z:10">
+                    <input type="checkbox" class="cardFlip" id="2"/>
+                    <label class="btn" for="2">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="img/cats/space.jfif" alt="Space Cat">
+                                <div class="card-description">
+                                    Space Cat
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iusto obcaecati rem nisi tenetur eveniet consectetur reprehenderit minima dicta? Odio, voluptatibus! Animi maiores impedit sunt illo inventore minima autem facilis?
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="card" style="--x:-5; --z:5">
+                    <input type="checkbox" class="cardFlip" id="3"/>
+                    <label class="btn" for="3">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="img/cats/cool.jpg" alt="Cool Cat">
+                                <div class="card-description">
+                                    Cool Cat
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda iusto obcaecati rem nisi tenetur eveniet consectetur reprehenderit minima dicta? Odio, voluptatibus! Animi maiores impedit sunt illo inventore minima autem facilis?
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <button>See more cat photos</button>
+        </section>
+
+        <section class="bg3" id="contact">
+            <h2 class="center">Contact</h2>
+
+            <form class="contact-form">
+                <label for="con-email">Email:</label>
+                <input type="email" id="con-email" placeholder="some@mail.com" required></input>
+
+                <label for="con-subject">Subject:</label>
+                <input type="text" id="con-subject" placeholder="" value="" minlength="5" maxlength="32" required></input>
+                
+                <label for="con-text">Text:</label>
+                <textarea id="con-text" placeholder="" value="" minlength="10" maxlength="1024" rows="10" required></textarea>
+
+                <button type="submit" class="center">Send Email</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Copyright 2022</p>
+
+            <p>
+                Social links: 
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
